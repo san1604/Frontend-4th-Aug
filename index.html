@@ -5,7 +5,9 @@
             Page Title - Sandeep
         </title>
         <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
-        <style>
+        <link rel="stylesheet" href="index.css"> <!--External CSS-->
+        <!--Internal CSS-->
+        <!-- <style>
             body{
                 background-color: lightblue;
             }
@@ -14,8 +16,8 @@
             }
             p{
                 background-color: yellowgreen;
-            }
-        </style>
+            } 
+        </style> -->
     </head>
     <body>
         <h1>My First Page</h1>
@@ -24,7 +26,7 @@
         <h4>My First Page</h4>
         <h5>My First Page</h5>
         <h6>My First Page</h6>
-        <p style="color: red;">My first paragraphMy First PageMy First PageMy <br>
+        <p style="color: red;">My first paragraphMy First PageMy First PageMy <br> <!--Inline CSS-->
              First PageMy First PageMy First PageMy First Page
         </p>
         <a href="https://www.google.com">Google</a><br>
@@ -53,14 +55,17 @@
             <hr>
         </div>
 
-        <p>
+        <p id="pTag">
             My bonnie lies over the ocean,
 
             My bonnie lies over the sea,
 
+        </p>
+            <p class="pClass">
             My bonnie lies over the ocean,
 
-            Oh! bring back my bonnie to me.
+            My bonnie lies over the sea,
+
         </p>
         <hr>
         <pre style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
@@ -73,7 +78,7 @@
             Oh! bring back my bonnie to me.
         </pre>
 
-        <ol>
+        <ol >
             <li>My First Item is A</li>
             <li>My First Item is B</li>
             <li>My First Item is C</li>
@@ -82,7 +87,7 @@
             <li>My First Item is F</li>
             <li>My First Item is G</li>
         </ol>
-        <ul>
+        <ul class="pClass">
             <li>My First Item is A</li>
             <li>My First Item is B</li>
             <li>My First Item is C</li>
@@ -91,7 +96,7 @@
             <li>My First Item is F</li>
             <li>My First Item is G</li>
         </ul>
-        <table>
+        <table class="pClass">
             <tr>
                 <th>Name</th>
                 <th>Age</th>

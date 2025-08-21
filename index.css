@@ -1,0 +1,26 @@
+body{
+        background-color: lightblue;
+}
+h1{
+        background-color: aqua;
+}
+p{
+        background-color: yellowgreen;
+}
+#pTag
+{
+    text-align: center;
+    color: red;
+    background-color: white;
+}
+.pClass
+{
+    text-align: right;
+    color: purple;
+    
+}
+table.pClass
+{
+    text-align: start;
+    color: crimson;
+}
