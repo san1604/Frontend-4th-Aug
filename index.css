@@ -42,10 +42,11 @@ h2,h3,p{
     border-width: 5px;
     border-color: red;
     border-style: solid;
-    background-image:url(background.png);
+    /* background-image:url(background.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background: red ;
     border-radius: 20px;
     /*margin-left: 20px; */
     /* margin-right: 20px; */
