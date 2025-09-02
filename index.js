@@ -98,31 +98,63 @@
 //    console.log(info); // -> Uncaught ReferenceError: info is not defined
 // }
 
-var height = 180;
-{
-   var weight = 70;
-   console.log(height); // -> 180
-   console.log(weight); // -> 70  
-}
-console.log(height); // -> 180
-console.log(weight); // -> 70
+// var height = 180;
+// {
+//    var weight = 70;
+//    console.log(height); // -> 180
+//    console.log(weight); // -> 70  
+// }
+// console.log(height); // -> 180
+// console.log(weight); // -> 70
 
-function helloWorldFunction(){
-    console.log("Hello");
-    console.log("World");
-}
-console.log("Let's begin")
-helloWorldFunction()
-console.log("And again");
-helloWorldFunction()
-console.log("Once more");
-helloWorldFunction()
+// function helloWorldFunction(){
+//     console.log("Hello");
+//     console.log("World");
+// }
+// console.log("Let's begin")
+// helloWorldFunction()
+// console.log("And again");
+// helloWorldFunction()
+// console.log("Once more");
+// helloWorldFunction()
 
-let counter = 100
-console.log("Counter: ", counter);
-{
-    let counter = 10
-    console.log("Count: ", counter);
+// let counter = 100
+// console.log("Counter: ", counter);
+// {
+//     let counter = 10
+//     console.log("Count: ", counter);
     
-}
-console.log("Count: ", counter);
+// }
+// console.log("Count: ", counter);
+
+// var counter = 100
+// printCounter()
+// function printCounter(){
+//     let counter = 200                    =>Shadow Variable
+//     console.log("Counte: ", counter);    => 
+// }
+// console.log("Counte: ", counter);
+// console.log("Counte: ", counter);
+
+// console.log("Counter: ",counter);
+// var counter = 100       
+
+let name = "Aditya"
+console.log("Name", name);
+console.log("type of Name variable is: ",typeof name);
+let typeofName = typeof name
+console.log("typeofName: ", typeofName);
+
+
+let year = 1990
+console.log("Year: ", year);
+console.log("type of year variable is: ", typeof year);
+
+let month
+console.log("Month: ",month);
+
+console.log("type of Name variable is: ", typeof month);
+
+
+
+
