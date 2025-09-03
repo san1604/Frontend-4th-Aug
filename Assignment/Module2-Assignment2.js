@@ -18,3 +18,18 @@ console.log("Lilly - ","Unit Price:",lilly,",","quantity:",noOfLillies,",","valu
 console.log("Tulip - ","Unit Price:",tulip,",","quantity:",noOfTulips,",","value:",valueOfTulips);
 console.log("Total: ",total);
 
+noOfRoses = noOfRoses - 20
+noOfLillies = noOfLillies - 30
+
+var valueOfRoses = rose * noOfRoses
+var valueOfLillies = lilly * noOfLillies
+var valueOfTulips = tulip * noOfTulips
+
+// total price of flowers
+var total = valueOfRoses + valueOfLillies + valueOfTulips
+
+console.log("Rose - ","Unit Price:",rose,",","quantity:",noOfRoses,",","value:",valueOfRoses);
+console.log("Lilly - ","Unit Price:",lilly,",","quantity:",noOfLillies,",","value:",valueOfLillies);
+console.log("Tulip - ","Unit Price:",tulip,",","quantity:",noOfTulips,",","value:",valueOfTulips);
+console.log("Total: ",total);
+
