@@ -356,28 +356,168 @@
 // console.log(str2);
 // console.log(typeof str2);
 
-let str = "text";
-let strStr = String(str);
-console.log(`${typeof str} : ${str}`); // -> string : text
-console.log(`${typeof strStr} : ${strStr}`); // -> string : text
-let nr = 42;
-let strNr = String(nr);
-console.log(`${typeof nr} : ${nr}`); // -> number : 42
-console.log(`${typeof strNr} : ${strNr}`); // -> string : 42
-let bl = true;
-let strBl = String(bl);
-console.log(`${typeof bl} : ${bl}`); // -> boolean : true
-console.log(`${typeof strBl} : ${strBl}`); // -> string : true
+// let str = "text";
+// let strStr = String(str);
+// console.log(`${typeof str} : ${str}`); // -> string : text
+// console.log(`${typeof strStr} : ${strStr}`); // -> string : text
+// let nr = 42;
+// let strNr = String(nr);
+// console.log(`${typeof nr} : ${nr}`); // -> number : 42
+// console.log(`${typeof strNr} : ${strNr}`); // -> string : 42
+// let bl = true;
+// let strBl = String(bl);
+// console.log(`${typeof bl} : ${bl}`); // -> boolean : true
+// console.log(`${typeof strBl} : ${strBl}`); // -> string : true
 
-let bnr = 123n;
-let strBnr = String(bnr);
-console.log(`${typeof bnr} : ${bnr}`); // -> bigint : 123
-console.log(`${typeof strBnr} : ${strBnr}`); // -> string : 123
-let un = undefined;
-let strUn = String(un);
-console.log(`${typeof un} : ${un}`); // -> undefined : undefined
-console.log(`${typeof strUn} : ${strUn}`); // -> string : undefined
-let n = null;
-let strN = String(n);
-console.log(`${typeof n} : ${n}`); // -> object : null
-console.log(`${typeof strN} : ${strN}`); // -> string : null
+// let bnr = 123n;
+// let strBnr = String(bnr);
+// console.log(`${typeof bnr} : ${bnr}`); // -> bigint : 123
+// console.log(`${typeof strBnr} : ${strBnr}`); // -> string : 123
+// let un = undefined;
+// let strUn = String(un);
+// console.log(`${typeof un} : ${un}`); // -> undefined : undefined
+// console.log(`${typeof strUn} : ${strUn}`); // -> string : undefined
+// let n = null;
+// let strN = String(n);
+// console.log(`${typeof n} : ${n}`); // -> object : null
+// console.log(`${typeof strN} : ${strN}`); // -> string : null
+
+// let testObj = {
+//     nr: "600",
+//     str: "My Text"
+// }
+// console.log("testObj: ",testObj);
+// console.log("type of testObj: ",typeof testObj);
+
+// console.log("nr: ", testObj.nr);
+// console.log("str: ", testObj.str);
+
+
+
+
+// let student_aditya = {
+//     name: "Aditya",
+//     course: "React",
+//     contact: "1234567890",
+//     email: "S1@123"
+
+// }
+// let student_anjali = {
+//     name: "Anjali",
+//     course: "Btech",
+//     contact: "2345678901",
+//     email: "B1@123"
+// }
+
+// console.log("Name: ", student_aditya.name);
+// console.log("course: ", student_aditya.course);
+// console.log("contact: ", student_aditya.contact);
+// console.log("email: ", student_aditya.email)
+
+// console.log("Name: ", student_anjali.name);
+// console.log("course: ", student_anjali.course);
+// console.log("contact: ", student_anjali.contact);
+// console.log("email: ", student_anjali.email)
+
+// student_aditya.age = 20
+// console.log("Aditya's Age: ", student_aditya.age);
+
+// console.log("Diksha's Age: ", student_anjali.age);
+
+// let days = ["Sun", "Mon" , "Tue", "Wed", "Thu", "Fri", "Sat"]
+// console.log(days[0]);
+// console.log(days[2]);
+// console.log(days[5]);
+// days[0] = "Sunday"
+// console.log(days[0]);
+// let emptyArray = []
+// console.log(emptyArray[0]);
+
+// let animal =    []
+// console.log(animal[0]);
+// animal[0 ] = "dog"
+// animal[2] = "Cat"
+// console.log(animal[0]);
+// console.log(animal[1]);
+// console.log(animal[2]);
+
+// let values = ["test", 7, 12.3, false]
+// console.log(typeof values);
+// console.log(values[0]);
+// console.log(values[1]);
+// console.log(values[2]);
+// console.log(values[3]);
+
+// let objArray = [user1, user2]
+// console.log(objArray);
+// console.log(objArray[1]);
+// console.log(objArray[1].surname);
+
+// objArray[2] {
+//     name: "Aditya"
+//     surname: "Gupta"
+
+// }
+
+
+// let days = ["sun", "mon", "tue", "wed", "thu"]
+// let day = "Sunday"
+// console.log(typeof days);
+// console.log(typeof day);
+// console.log(days instanceof Array);
+// console.log(day instanceof Array);
+// console.log("Day's length: ",days.length);
+
+// days[5] = "someday"
+
+// console.log("Day's length: ",days.length);
+
+// console.log("index of wednesday: ", days.indexOf("wed"));
+// console.log("index of wednesday: ", days.indexOf("wednesday"));
+
+
+// let names = ["Sandeep", "Kuljot", "Aditya", "Anjali", "Diksha"]
+// console.log(names.length);
+// names.push("GEORGE AK")
+// console.log(names.length);
+// console.log(names);
+
+// console.log(names.indexOf("Aditya"));
+// console.log(names.indexOf("Victor"));
+
+// names.unshift("Victor")
+// console.log(names.indexOf("Victor"));
+// console.log(names);
+
+
+let names = ["Olivia", "Emma", "mateo", "samual"]
+console.log(names.length);
+let name = names.pop()
+console.log(names.length);
+console.log(name);
+
+console.log(names.length);
+name = names.shift()
+console.log(names.length);
+console.log(name);
+console.log(names);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
