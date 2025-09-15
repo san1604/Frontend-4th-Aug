@@ -490,26 +490,38 @@
 // console.log(names);
 
 
+// let names = ["Olivia", "Emma", "mateo", "samual"]
+// console.log(names.length);
+// let name = names.pop()
+// console.log(names.length);
+// console.log(name);
+
+// console.log(names.length);
+// name = names.shift()
+// console.log(names.length);
+// console.log(name);
+// console.log(names);
+
+// let names = ["Olivia", "Emma", "mateo", "samual"]
+// console.log(names);
+// names.reverse()
+// console.log(names);
+
 let names = ["Olivia", "Emma", "mateo", "samual"]
-console.log(names.length);
-let name = names.pop()
-console.log(names.length);
-console.log(name);
+// let n1 = names.slice(2)
+// console.log(n1);
+// let n2 = names.slice(1,3)
+// console.log(n2);
+// let n3 = names.slice(0, -1)
+// console.log(n3);
+// let n4 = names.slice(-1)
+// console.log(n4);
+// let n5 = names.slice(-2)
+// console.log(n5);
 
-console.log(names.length);
-name = names.shift()
-console.log(names.length);
-console.log(name);
+let name1 = ["Aditya", "George AK", "Anjali", "Diksha", "Sandeep"]
+names = names.concat(name1)
 console.log(names);
-
-
-
-
-
-
-
-
-
 
 
 
