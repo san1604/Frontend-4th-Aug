@@ -507,7 +507,7 @@
 // names.reverse()
 // console.log(names);
 
-let names = ["Olivia", "Emma", "mateo", "samual"]
+// let names = ["Olivia", "Emma", "mateo", "samual"]
 // let n1 = names.slice(2)
 // console.log(n1);
 // let n2 = names.slice(1,3)
@@ -519,17 +519,154 @@ let names = ["Olivia", "Emma", "mateo", "samual"]
 // let n5 = names.slice(-2)
 // console.log(n5);
 
-let name1 = ["Aditya", "George AK", "Anjali", "Diksha", "Sandeep"]
-names = names.concat(name1)
-console.log(names);
+// let name1 = ["Aditya", "George AK", "Anjali", "Diksha", "Sandeep"]
+// names = names.concat(name1)
+// console.log(names);
+// name1 = name1.concat(names)
 
+// let nr = 0
+// let year = 1970
+// let name = "Alice"
+// let empty = ""
+// console.log(!nr);
+// console.log(!year);
+// console.log(!name);
+// console.log(!empty);
+// console.log(!!nr);
+// console.log(!!name);
+// console.log(true && 1991);
+// console.log(false && 1991);
+// console.log(2 && 5);
+// console.log(0 && 5);
+// console.log("Alice" && "bob");
+// console.log(true || 1991);
+// console.log(false || 1991);
+// console.log(2||5);
+// console.log(0 || 5);
+// console.log("Alice"|| "bob");
+// console.log("" || "bob");
 
+// let x = 0
+// let y = 0
+// console.log(x++ && y++);
+// console.log(x);
+// console.log(y);
+// console.log("-------");
+// x = 1
+// y = 0
+// console.log(x++ && y++);
+// console.log(x);
+// console.log(y);
+// console.log("-------");
 
+// let x = 0
+// let y = 0
+// console.log(x++ || y++);
+// console.log(x);
+// console.log(y);
+// console.log("-------");
+// x = 1
+// y = 0
+// console.log(x++ || y++);
+// console.log(x);
+// console.log(y);
+// console.log("-------");
 
+// let a = true
+// console.log(a);
+// a &&= false
+// console.log(a);
 
+// console.log("-----");
 
+//  a = true
+// console.log(a);
+// a = false
+// console.log(a);
 
+// let greetings = "Hi!"
+// console.log(greetings + " " + "Alice");
+// let sentence = "Happy new Year "
+// let newSentence = sentence +  10191
+// console.log(newSentence);
+// console.log(typeof newSentence);
 
+// let sentence = "Happy new "
+// sentence += "Year "
+// sentence += 10191
+// console.log(sentence);
 
+// console.log(10 === 5);
+// console.log(10 === 10);
+// console.log(10 === "10");
+// console.log("10" === "10");
+// console.log(10 === 10n);
+// console.log("Alice" === "Bob");
+// console.log(0 === false);
+// console.log(NaN === NaN);
+// console.log(undefined === false);
 
+// console.log("----------");
+
+// console.log(10 == 5);
+// console.log(10 == 10);
+// console.log(10 == "10");
+// console.log("10" == "10");
+// console.log(10 == 10n);
+// console.log("Alice" == "Bob");
+// console.log(0 == false);
+// console.log(NaN == NaN);
+// console.log(undefined == false);
+
+// console.log(10 !== 5);
+// console.log(10 !== 10);
+// console.log(10 !== "10");
+// console.log("10" !== "10");
+// console.log(10 !== 10n);
+// console.log("Alice" !== "Bob");
+// // This line logs the result of the strict inequality comparison (0 !== false) to the console.
+// // The !== operator checks if the values are not equal and also not of the same type (no type coercion).
+// // 0 is a number, false is a boolean, so they are different types and values.
+// // Therefore, (0 !== false) evaluates to true, so 'true' will be printed in the console.
+// console.log(0 !== false);
+// console.log(0 !== false);
+// console.log(NaN !== NaN);
+// console.log(undefined !== false);
+// console.log("----------");
+
+// console.log(10 != 5);
+// console.log(10 != 10);
+// console.log(10 != "10");
+// console.log("10" != "10");
+// console.log(10 != 10n);
+// console.log("Alice" != "Bob");
+// console.log(0 != false);
+// console.log(NaN != NaN);
+// console.log(undefined != false);
+
+// console.log(10 > 100);
+// console.log(101 > 100);
+// console.log(101 > "100");
+// console.log(101 < 100);
+// console.log(100n < 102);
+// console.log("10" <= 20n);
+// console.log(101 <= 100);
+// console.log(10 >= 10n);
+// console.log("10" <= 20);
+
+// console.log("b" > "a");
+// console.log("a" > "B");
+// console.log("B" > "A");
+// console.log("A" > "4");
+// console.log("4" > "1");
+// console.log("ab1" < "ab4");
+// console.log("ab4" < "abA");
+// console.log("abB" > "aba");
+// console.log("aba" > "abb"); 
+// console.log("ab" > "ab4"); 
+
+// let names = ["BOb", "ALice"]
+// name = names[0]
+// console.log(names instanceof Array);
+// console.log(name instanceof Array);
 
