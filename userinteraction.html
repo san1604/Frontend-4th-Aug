@@ -2,12 +2,17 @@
 <html>
     <head>
         <title>Hello</title>
+        <script src="userinteraction.js ">
+        
+        </script>
     </head>
+    
     <body>
         <input id = "MyID" type="text">
         <button
             onclick="console.log('Input Value: ',document.getElementById('MyID').value);">
-            Get Text
+            'Get Text
+
         </button>
         <br>
         <button onclick="alert('Hello World')">Alert Dailog</button><br>
@@ -15,5 +20,8 @@
         <button onclick="window.alert(4 * 2)">Show Calculation </button><br>
         <button onclick="window.alert(true)">Showing Boolean </button><br>
         <button onclick="window.alert('Text1', 'Text2')">Multiple Text </button><br>
+        <button onclick="helloworld()">Hello World</button><br>
+        <button onclick="confirmDailog()">Confirmation Dailog</button><br>
+        <button onclick="confirmDailog1()">Confirmation Dailog 1</button><br>
     </body>
 </html>
