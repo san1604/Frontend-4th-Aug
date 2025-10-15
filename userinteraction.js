@@ -181,3 +181,90 @@
     
 // }
 
+// let names = []
+// let isOver = false
+// while (!isOver) {
+//     let name = prompt("Enter another name or press cancel")
+//     if (name != null) {
+//         names.push(name)
+//     }
+//     else{
+//         isOver = true
+//     }
+// }
+// for (let index = 0; index < names.length; index++) {
+//     console.log(names[index]);
+    
+    
+// }
+
+// let values= [10,30,50,100,110,200,250,300]
+// console.log("---------Forward----------");
+// for (let index = 0; index < values.length; index++) {
+//     console.log(values[index]);  
+// }
+// console.log("---------Forward----------");
+// for (let index = values.length-1; index > 0; index--) {
+//     console.log(values[index]);  
+// }
+// console.log("---------Forward----------");
+// for (let index = 0; index < values.length; index += 2) {
+//     console.log(values[index]);  
+// }
+
+// let values = [10,30,50,100]
+// let sum = 0
+// // for (let index = 0; index < values.length; index++) {
+// //     sum += values[index]    
+// // }
+// // console.log(sum);
+// for (let number of values){
+//     sum += number
+// }
+// console.log(sum);
+
+// 
+
+// let user = {
+//     name : "Calvin",
+//     surname: "Hart",
+//     Age: 66,
+//     email: "calvinhart@gmail.com"
+// }
+// for (let key in user){
+//     console.log("Key: ", key);
+//     console.log("Value: ", user[key]);
+// }
+let temperatures
+let sum 
+let meantemp
+temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
+getMeanTemperatures(temperatures)
+// sum = 0
+// for (let i = 0; i < temperatures.length; i++) {
+//     sum += temperatures[i]
+    
+// }
+// meantemp = sum / temperatures.length
+// console.log(`mean: ${meantemp}`);
+
+console.log("-----");
+temperatures = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
+getMeanTemperatures(temperatures)
+// sum = 0
+// for (let i = 0; i < temperatures.length; i++) {
+//     sum += temperatures[i]
+    
+// }
+// meantemp = sum / temperatures.length
+// console.log(`mean: ${meantemp}`);
+
+function getMeanTemperatures(temperatures) {
+    sum = 0
+    for (let i = 0; i < temperatures.length; i++) {
+        sum += temperatures[i]
+        
+    }
+    meantemp = sum / temperatures.length
+    console.log(`mean: ${meantemp}`);
+}
