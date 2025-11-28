@@ -965,25 +965,52 @@
 // console.log("getType(): ", circle1.getType());
 
 
+// let contact = 
+// {
+//     _tel : "207-367-4065",
+//     get tel()
+//     {
+//         console.log("Calling getter for _tel");
+//         return this._tel
+//     },
+//     set tel(t)
+//     {
+//         console.log("Setting _tel");
+//          this._tel = t
+//     }
+
+// }
+// console.log(contact.tel);
+// contact.tel = "100-233-4653"    //setter is called
+// console.log(contact.tel);
+// contact.email = "RonaldSMurphy@freepost.org"
+// console.log(contact.email);
+
+
 let contact = 
 {
-    _tel : "207-367-4065",
-    get tel()
+    _age : 36,
+    _firstname: "David",
+    _lastName: "Taylor",
+    get fullName()
     {
-        console.log("Calling getter for _tel");
-        return this._tel
+        return `${this._firstname} ${this._lastName}`
     },
-    set tel(t)
+    get age()
     {
-        console.log("Setting _tel");
-         this._tel = t
+        return this._age
+    },
+    set age(a)
+    {
+        if(a>0)
+            this._age = a
+        else
+            console.log("Setting up invalid number is not allowed");
+        
     }
-
 }
-console.log(contact.tel);
-contact.tel = "100-233-4653"    //setter is called
-console.log(contact.tel);
-contact.email = "RonaldSMurphy@freepost.org"
-console.log(contact.email);
-
+console.log(contact.fullName);
+// contact.age = -20
+contact.age = 20
+console.log(contact.age);
 
