@@ -5,18 +5,18 @@
 
 // const { use } = require("react")
 
-    
+
 // }
 // function confirmDailog(){
 //         let decision = window.confirm("It is Ok")
 //         console.log(decision);
-        
+
 // }
 // function confirmDailog1(){
 //     let remove = confirm("Remove All Data")
 //     let message = remove ? "Deleting Data!" : "Cancelled"
 //     console.log(message);
-    
+
 // }
 // let isUserReady = confirm("Are you ready")
 // console.log(isUserReady);
@@ -52,7 +52,7 @@
 // let num = -1
 // if (num >= 0) {
 //     console.log("number is positive");
-    
+
 // }
 // else{
 //     console.log("negative");
@@ -120,7 +120,7 @@
 //     var total = unitPrice * pieces
 //     alert("Total price of products",total)
 //     console.log(total);
-    
+
 
 // }
 // 
@@ -163,22 +163,22 @@
 //         break
 //     case 3:
 //         console.log("Three");
-        
+
 
 //     default:
 //         console.log("Unknown number");
-        
+
 //         break;
 // }
 
 // let number = prompt("Enter a number")
 // if (number > 90 && number < 110) {
 //     console.log("Bingo!");
-    
+
 // }
 // else{
 //     console.log("Miss");
-    
+
 // }
 
 // let names = []
@@ -194,8 +194,8 @@
 // }
 // for (let index = 0; index < names.length; index++) {
 //     console.log(names[index]);
-    
-    
+
+
 // }
 
 // let values= [10,30,50,100,110,200,250,300]
@@ -243,7 +243,7 @@
 // sum = 0
 // for (let i = 0; i < temperatures.length; i++) {
 //     sum += temperatures[i]
-    
+
 // }
 // meantemp = sum / temperatures.length
 // console.log(`mean: ${meantemp}`);
@@ -254,7 +254,7 @@
 // sum = 0
 // for (let i = 0; i < temperatures.length; i++) {
 //     sum += temperatures[i]
-    
+
 // }
 // meantemp = sum / temperatures.length
 // console.log(`mean: ${meantemp}`);
@@ -263,7 +263,7 @@
 //     sum = 0
 //     for (let i = 0; i < temperatures.length; i++) {
 //         sum += temperatures[i]
-        
+
 //     }
 //     meantemp = sum / temperatures.length
 //     console.log(`mean: ${meantemp}`);
@@ -283,7 +283,7 @@
 // checkAge(10, 9876543219, "Aditya")
 // checkAge("Aditya", 10, 9876543219)
 
-    
+
 // }
 // let names = ["alice", "bob", "eve", "john"]
 // let name = getElement(names, 2)
@@ -299,7 +299,7 @@
 // function syaHello() {
 //     let count = 10
 //     console.log("Count from function: ",count);
-    
+
 // }
 
 // function add(first, second){
@@ -323,7 +323,7 @@
 
 // function showmessage(message) {
 //     console.log(`message: ${message}`);
-    
+
 // }
 // console.log(showmessage);
 // let sm = showmessage
@@ -409,7 +409,7 @@
 // setTimeout(function()
 // {
 //     console.log("this runs after 1 second");
-    
+
 // },100
 // )
 // console.log("end");
@@ -419,14 +419,14 @@
 // let intervalId = setInterval(function()
 // {
 //     console.log("repeating: ", ++counter);
-    
+
 // }, 1000
 // )
 // setTimeout(function()
 // {
 //     clearInterval(intervalId)
 //     console.log("stopped");
-    
+
 // },5500)
 // console.log("End!");
 // window.addEventListener("click", function(){
@@ -468,7 +468,7 @@
 // let array = 1//[1,2,3,4,5,6]
 // if(array instanceof Array){
 //     console.log("yes, we got the array");
-    
+
 // }
 // else
 // {
@@ -490,7 +490,7 @@
 //     else
 //     {
 //         console.log("Other Error", + error);
-        
+
 //     }
 // }
 // console.log(a);
@@ -508,7 +508,7 @@
 // finally
 // {
 //     console.log("Finally: ", a);
-    
+
 // }
 // console.log("Outside: ", a);
 // let = 10
@@ -588,7 +588,7 @@
 //     {
 //         return c
 //     }
-        
+
 // }
 // console.log(largest(1,1,2));
 // console.log(largest(3,2,1));
@@ -692,7 +692,7 @@
 // for(let count1 = 1; count<Object.keys(contact).length; count1++)
 // {
 //     console.log(contact["email_"+count1]);
-    
+
 // }
 
 // let test = 
@@ -761,17 +761,17 @@
 // if(contact.email.Work)
 // {
 //     console.log("THis is executing");
-    
+
 // }
 // if("private" in contact.email)
 // {
 //     console.log("This is private email", contact.email.private);
-    
+
 // }
 // if("email" in contact)
 // {
 //     console.log("This is private email", contact.email.private);
-    
+
 // }
 // let contact = 
 // {
@@ -805,31 +805,185 @@
 // console.log("point3.x", point3.x);
 
 
-let point0 = {x:10,y:20}
-let point1 = point0
-let point2 = {}
-Object.assign(point2,point0)
-console.log(point2.x );
-console.log(point2.y );
+// let point0 = {x:10,y:20}
+// let point1 = point0
+// let point2 = {}
+// Object.assign(point2,point0)
+// console.log(point2.x );
+// console.log(point2.y );
 
-point1.x = 30
-point1.y = 50
+// point1.x = 30
+// point1.y = 50
 
-point0.x = 60
-point0.y = 70
+// point0.x = 60
+// point0.y = 70
 
-console.log("------");
-console.log(point2.x );
+// console.log("------");
+// console.log(point2.x );
 
-console.log(point2.y );
-console.log("------");
-console.log("point1.x:", point1.x);
-console.log("point1.y:", point1.y);
-console.log("point2.x:", point2.x);
-console.log("point2.y:", point2.y);
+// console.log(point2.y );
+// console.log("------");
+// console.log("point1.x:", point1.x);
+// console.log("point1.y:", point1.y);
+// console.log("point2.x:", point2.x);
+// console.log("point2.y:", point2.y);
 
-console.log(point1 === point0);
-console.log(point1 === point2);
+// console.log(point1 === point0);
+// console.log(point1 === point2);
 
+// let point4 = {};
+// Object.assign(point4, point0, {z:100})
+// console.log("point4", point4);
+// // console.log(point4.x);
+// // console.log(point4.y);
+// // console.log(point4.z);
+
+// let point5 = {};
+// Object.assign(point5, point4, {z:120 , color:"red"})
+// console.log("point5", point5);
+
+// let point6 = {}
+// point5 = {...point5}
+// console.log("point5: ", point5);
+// console.log("point5===point6 ", point6===point5);
+
+
+
+// function max(array) {
+//     let maxValue = array[1];
+//     for (let i = 1; i < array.length; i++) {
+//         if (array[i] > maxValue) {
+//             maxValue = array[i];
+//         }
+//     }
+//     return maxValue;
+// }
+
+// console.log(max([1, 4, 6, 2]));
+// console.log(max([10, 4, 6, 2]));
+
+// const arr1 = [1,2]
+// const arr2 = [3,4]
+
+// const combinedArray = [...arr1, ...arr2]
+// console.log("arr1: ",arr1);
+// console.log("arr2: ",arr2);
+// console.log("combined array: ",combinedArray);
+
+// const array1 = [1,2,3,4]
+// let resultArray = [...array1]
+// console.log(resultArray);
+// resultArray = [...array1, 5,6,7,8]
+// console.log("resultArray",resultArray);
+
+// resultArray = [5,6,7,8,...array1]
+// console.log("resultArray",resultArray);
+
+// resultArray = [5,6,...array1,7,8]
+// console.log("resultArray",resultArray);
+
+// function sum(a,b,c)
+// {
+//     return a+b+c
+// }
+// let numbers = [10,12,23]
+// const result = sum(...numbers)
+// console.log("result: ", result);
+
+// const string1 = "Aditya"
+// let charArray = [...string1]
+// console.log("Char Array: ", charArray);
+
+// let deepclone = function(obj)
+// {
+//     let newObj = {...obj}
+//     for(property in newObj)
+//     {
+//         if(typeof newObj[property]==="object")
+//         {
+//             newObj[property] = deepclone(newObj[property])
+//         }
+//     }
+//     return newObj
+// }
+
+// let obj = {
+//     x:10,
+//     y:20,
+//     z: {
+//         a:100,
+//         b:200
+//     }
+// }
+// let obj1 = {}
+// // Object.assign(obj1,obj)
+// // obj1 = {...obj}
+// obj1 = deepclone(obj)
+// console.log("obj:",obj)
+// console.log("obj1:",obj1)
+// console.log("obj1===obj:",obj1===obj)
+
+// obj.z.a= 150
+// obj.x = 15
+// console.log("Chinging obj.z.a to 150");
+// console.log("Chinging obj.x to 15");
+// console.log(obj);
+// console.log(obj1);
+
+
+// let circle = 
+// {
+//     radius: 100,
+//     center:
+//     {
+//         x : 0,
+//         y : 0
+//     },
+//     // getType : function()
+//     // {
+//     //     return "circle"
+//     // }
+//     getType()
+//     {
+//         // return "circle"
+//         return (typeof this.radius === "number") ? "circle" : "unknown"
+//         // return (typeof circle.radius === "number") ? "circle" : "unknown"    
+//     },
+//     getRadius()
+//     {
+//         return this.radius
+//     }
+// }
+// console.log("circle.radius",circle.radius);
+// console.log("circle.center.x",circle.center.x);
+// console.log("getType():", circle.getType());
+// console.log("getType():", circle["getType"]());
+// console.log("getRadius(): ", circle.getRadius());
+// let circle1 = {...circle}
+// circle1.radius = "abc"
+// console.log("getRadius(): ", circle1.getRadius());
+// console.log("getType(): ", circle1.getType());
+
+
+let contact = 
+{
+    _tel : "207-367-4065",
+    get tel()
+    {
+        console.log("Calling getter for _tel");
+        return this._tel
+    },
+    set tel(t)
+    {
+        console.log("Setting _tel");
+         this._tel = t
+    }
+
+}
+console.log(contact.tel);
+contact.tel = "100-233-4653"    //setter is called
+console.log(contact.tel);
+contact.email = "RonaldSMurphy@freepost.org"
+console.log(contact.email);
 
 
