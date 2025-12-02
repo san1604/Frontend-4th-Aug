@@ -987,30 +987,88 @@
 // console.log(contact.email);
 
 
-let contact = 
-{
-    _age : 36,
-    _firstname: "David",
-    _lastName: "Taylor",
-    get fullName()
-    {
-        return `${this._firstname} ${this._lastName}`
-    },
-    get age()
-    {
-        return this._age
-    },
-    set age(a)
-    {
-        if(a>0)
-            this._age = a
-        else
-            console.log("Setting up invalid number is not allowed");
+// let contact = 
+// {
+//     _age : 36,
+//     _firstname: "David",
+//     _lastName: "Taylor",
+//     get fullName()
+//     {
+//         return `${this._firstname} ${this._lastName}`
+//     },
+//     get age()
+//     {
+//         return this._age
+//     },
+//     set age(a)
+//     {
+//         if(a>0)
+//             this._age = a
+//         else
+//             console.log("Setting up invalid number is not allowed");
         
-    }
-}
-console.log(contact.fullName);
-// contact.age = -20
-contact.age = 20
-console.log(contact.age);
+//     }
+// }
+// console.log(contact.fullName);
+// // contact.age = -20
+// contact.age = 20
+// console.log(contact.age);
 
+// let contact =
+// {
+//     age: 36,
+//     firstName: "David",
+//     lastName: "Taylor",
+//     get fullName()
+//     {
+//          return `${this.firstName} ${this.lastName}`; 
+//     },
+//     get age()
+//     {
+//         return this._age; 
+//     },
+//     set age(a) 
+//     { 
+//         if (a > 0) 
+//             this.age = a 
+//     }
+// }
+// let keys = Object.keys(contact)
+// console.log("Keys of contact: ", keys);
+// let desc = Object.getOwnPropertyDescriptor(contact, "age")
+// console.log("age property descriptor: ", desc);
+// Object.defineProperty(contact, "age",
+//     {
+//         value: 34,
+//         writable:true,
+//         enumerable:false,
+//         configurable:true
+//     }
+// )
+// keys = Object.keys(contact)
+// console.log("Keys of contact", keys);
+// desc = Object.getOwnPropertyDescriptor(contact, "age")
+// console.log("age property descriptor: ", desc);
+
+// Object.defineProperty(contact, "age",
+//     {
+//         value: contact.age,
+//         writable:false,
+//         enumerable:false,
+//         configurable:true
+//     }
+// )
+// contact.age = 100
+// console.log("age: ", contact.age);
+
+let createpoint = function(x,y)
+{
+    let obj = {}
+    obj.x = x
+    obj.y = y
+    return obj
+}
+let point1 = createpoint(1,1)
+let point2 = createpoint(2,2)
+console.log(point1);
+console.log(point2);
