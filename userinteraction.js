@@ -1061,14 +1061,211 @@
 // contact.age = 100
 // console.log("age: ", contact.age);
 
-let createpoint = function(x,y)
+// let createpoint = function(x,y)
+// {
+//     let obj = {}
+//     obj.x = x
+//     obj.y = y
+//     return obj
+// }
+// let point1 = createpoint(1,1)
+// let point2 = createpoint(2,2)
+// console.log(point1);
+// console.log(point2);
+
+// let createpoint = function(x,y)
+// { 
+//     return {
+//         x:x,
+//         y:y
+//     }
+// }
+// let point1 = createpoint(1,1)
+// let point2 = createpoint(2,2)
+// console.log(point1);
+// console.log(point2);
+
+// let createpoint = (x,y) => ({x,y})
+// let point1 = createpoint(1,1)
+// let point2 = createpoint(2,2)
+// console.log(point1);
+// console.log(point2);
+
+// let createColoredPoint = function(x, y, color)
+// {
+//     let _info = "...object under cunstruction"
+//     let _color = color
+//     console.log(_info)
+//     return{
+//         x,
+//         y,
+//         getColor()
+//         {
+//             return _color
+//         }
+//     }
+// }
+// let Coloredpoint1 = createColoredPoint(1,1,"Red")
+// let Coloredpoint2 = createColoredPoint(2,2,"Green")
+// console.log("Coloredpoint1.getColor(): ", Coloredpoint1.getColor());
+// console.log("Coloredpoint2.getColor(): ", Coloredpoint2.getColor());
+// console.log("coloredPoint1._color", Coloredpoint1._color);
+
+// let Coloredpoint = function(x, y, color)
+// {
+//     let _info = "...object under cunstruction"
+//     let _color = color
+//     console.log(_info)
+    
+//     this.x = x,
+//     this.y = y,
+//     this.getColor = function()
+//     {
+//         return _color
+//     }
+    
+// }
+// let Coloredpoint1 = new Coloredpoint(1,1,"Red")
+// let Coloredpoint2 = new Coloredpoint(2,2,"Green")
+// console.log("Coloredpoint1.getColor(): ", Coloredpoint1.getColor());
+// console.log("Coloredpoint2.getColor(): ", Coloredpoint2.getColor());
+// console.log("coloredPoint1._color", Coloredpoint1._color);
+// console.log("coloredPoint.constructor.name", Coloredpoint.constructor.name);
+// console.log("coloredPoint.constructor.name", Coloredpoint.constructor);
+// console.log("coloredPoint.constructor.name", typeof Coloredpoint.constructor);
+
+// console.log(1+"2");
+// console.log(1-"a");
+
+// let testString = new String("Uno doi trei")
+// console.log("testString.length", testString.length)
+// console.log("testString.toUpperCase: ", testString.toUpperCase());
+
+// String.prototype.hi = function()
+// {
+//     console.log("hi")
+// }
+// testString.hi()
+
+// class Student
+// {
+//     name
+//     age
+//     gender
+//     rollNumber
+//     // constructor()
+//     // {
+//     //     console.log("constructor called");
+//     // }//default constructor
+//     constructor(name, age, gender, rollNumber)
+//     {
+//         console.log("constructor called");
+//         this.name = name
+//         this.age = age
+//         this.gender = gender
+//         this.rollNumber = rollNumber
+//     }// parameterized constr
+
+//     printStudent()
+//     {
+//         console.log("sandeep.name: ",this.name);
+//         console.log("sandeep.age: ",this.age);
+//         console.log("sandeep.gender: ",this.gender);
+//         console.log("sandeep.rollNumber: ",this.rollNumber);
+//     }
+// }
+
+// console.log("creating new object");
+// let sandeep = new Student("Sandeep Solanki", 20, "Male", 101)
+// // let sandeep = new Student
+// console.log("created object");
+// // sandeep.name = "Sandeep Solanki"
+// // sandeep.age = 24
+// // sandeep.gender = "Male"
+// // sandeep.rollNumber = 121
+
+// // console.log("sandeep.name: ",sandeep.name);
+// // console.log("sandeep.age: ",sandeep.age);
+// // console.log("sandeep.gender: ",sandeep.gender);
+// // console.log("sandeep.rollNumber: ",sandeep.rollNumber);
+
+// sandeep.printStudent()
+
+// let aditya = new Student("Aditya Gupta", 21, "Male", 102)
+// aditya.printStudent()
+
+class Vehicle
 {
-    let obj = {}
-    obj.x = x
-    obj.y = y
-    return obj
+    transportMode
+    weight
+    capasity
+    color
+    print()
+    {
+        console.log("transportMode: ", this.transportMode);
+        console.log("weight: ", this.weight);
+        console.log("capasity: ", this.capasity);
+        console.log("capasity: ", this.capasity);
+    }
 }
-let point1 = createpoint(1,1)
-let point2 = createpoint(2,2)
-console.log(point1);
-console.log(point2);
+class MotorBike extends Vehicle
+{
+    maxSpeed
+    fuelType
+    PeopleCapacity
+    average
+
+    print()
+    {
+        super.print()
+        console.log("maxSpeed: ", this.maxSpeed)
+        console.log("fuelType: ", this.fuelType)
+        console.log("PeopleCapacity: ", this.PeopleCapacity)
+        console.log("average: ", this.average)
+    }
+}
+class Car extends Vehicle
+{
+    maxSpeed
+    fuelType
+    PeopleCapacity
+    average  
+    gears
+    canReverse
+    
+    print()
+    {
+        super.print()
+        console.log("maxSpeed: ", this.maxSpeed)
+        console.log("fuelType: ", this.fuelType)
+        console.log("PeopleCapacity: ", this.PeopleCapacity)
+        console.log("average: ", this.average)
+        console.log("gears: ", this.gears)
+        console.log("canReverse: ", this.canReverse)
+
+    }
+}
+let honda = new Car
+honda.transportMode = "Road"
+honda.weight = "150 KGS"
+honda.capasity = "2.5 L"
+honda.color = "Yellow"
+honda.maxSpeed = "220 KMPH"
+honda.fuelType = "Diesel"
+honda.PeopleCapacity = 6
+honda.average = "50 KMPL"
+honda.canReverse = true
+
+honda.print()
+console.log("------");
+
+let motorBike = new MotorBike
+motorBike.transportMode = "Road"
+motorBike.weight = "100 KGS"
+motorBike.capasity = "1.5 L"
+motorBike.color = "Red"
+motorBike.maxSpeed = "150KMPH"
+motorBike.fuelType = "Petrol"
+motorBike.PeopleCapacity = 2
+motorBike.average = "80 KMPL"
+motorBike.print()
