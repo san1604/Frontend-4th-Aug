@@ -1194,78 +1194,126 @@
 // let aditya = new Student("Aditya Gupta", 21, "Male", 102)
 // aditya.printStudent()
 
-class Vehicle
-{
-    transportMode
-    weight
-    capasity
-    color
-    print()
-    {
-        console.log("transportMode: ", this.transportMode);
-        console.log("weight: ", this.weight);
-        console.log("capasity: ", this.capasity);
-        console.log("capasity: ", this.capasity);
-    }
-}
-class MotorBike extends Vehicle
-{
-    maxSpeed
-    fuelType
-    PeopleCapacity
-    average
+// class Vehicle
+// {
+//     transportMode
+//     weight
+//     capasity
+//     color
+//     print()
+//     {
+//         console.log("transportMode: ", this.transportMode);
+//         console.log("weight: ", this.weight);
+//         console.log("capasity: ", this.capasity);
+//         console.log("capasity: ", this.capasity);
+//     }
+// }
+// class MotorBike extends Vehicle
+// {
+//     maxSpeed
+//     fuelType
+//     PeopleCapacity
+//     average
 
-    print()
-    {
-        super.print()
-        console.log("maxSpeed: ", this.maxSpeed)
-        console.log("fuelType: ", this.fuelType)
-        console.log("PeopleCapacity: ", this.PeopleCapacity)
-        console.log("average: ", this.average)
-    }
-}
-class Car extends Vehicle
-{
-    maxSpeed
-    fuelType
-    PeopleCapacity
-    average  
-    gears
-    canReverse
+//     print()
+//     {
+//         super.print()
+//         console.log("maxSpeed: ", this.maxSpeed)
+//         console.log("fuelType: ", this.fuelType)
+//         console.log("PeopleCapacity: ", this.PeopleCapacity)
+//         console.log("average: ", this.average)
+//     }
+// }
+// class Car extends Vehicle
+// {
+//     maxSpeed
+//     fuelType
+//     PeopleCapacity
+//     average  
+//     gears
+//     canReverse
     
-    print()
+//     print()
+//     {
+//         super.print()
+//         console.log("maxSpeed: ", this.maxSpeed)
+//         console.log("fuelType: ", this.fuelType)
+//         console.log("PeopleCapacity: ", this.PeopleCapacity)
+//         console.log("average: ", this.average)
+//         console.log("gears: ", this.gears)
+//         console.log("canReverse: ", this.canReverse)
+
+//     }
+// }
+// let honda = new Car
+// honda.transportMode = "Road"
+// honda.weight = "150 KGS"
+// honda.capasity = "2.5 L"
+// honda.color = "Yellow"
+// honda.maxSpeed = "220 KMPH"
+// honda.fuelType = "Diesel"
+// honda.PeopleCapacity = 6
+// honda.average = "50 KMPL"
+// honda.canReverse = true
+
+// honda.print()
+// console.log("------");
+
+// let motorBike = new MotorBike
+// motorBike.transportMode = "Road"
+// motorBike.weight = "100 KGS"
+// motorBike.capasity = "1.5 L"
+// motorBike.color = "Red"
+// motorBike.maxSpeed = "150KMPH"
+// motorBike.fuelType = "Petrol"
+// motorBike.PeopleCapacity = 2
+// motorBike.average = "80 KMPL"
+// motorBike.print()
+
+// class Test{
+//     name
+//     description
+//     marking
+//     rank
+// }
+// let physicsTest = new Test()
+// physicsTest.name = "Physics Test"
+// physicsTest.description = "fdgdfghgb gfbgf"
+// physicsTest.marking = "50"
+// physicsTest.rank = 100
+
+// console.log(physicsTest);
+
+// let { name, marking, rank} = physicsTest
+// console.log("Name: ", name);
+// console.log("marking: ", marking);
+// console.log("rank: ", rank);
+
+// let Vehicle = function(id, lattitude, longitude)
+// {
+//     this.setPosition = function(lattitude, longitude)
+//     {
+//         this.time = Date.now();
+//         this.longitude = longitude
+//         this.lattitude = lattitude
+//     }
+//     this.id = id
+//     this.status = "unavailable"
+//     this.setPosition(lattitude, longitude)
+// }
+
+let Vehicle = function(intialData)
+{
+    let { id, lattitude, longitude } = intialData
+    this.setPosition = function(lattitude, longitude)
     {
-        super.print()
-        console.log("maxSpeed: ", this.maxSpeed)
-        console.log("fuelType: ", this.fuelType)
-        console.log("PeopleCapacity: ", this.PeopleCapacity)
-        console.log("average: ", this.average)
-        console.log("gears: ", this.gears)
-        console.log("canReverse: ", this.canReverse)
-
+        this.time = Date.now();
+        this.longitude = longitude
+        this.lattitude = lattitude
     }
+    this.id = id
+    this.status = "unavailable"
+    this.setPosition(lattitude, longitude)
 }
-let honda = new Car
-honda.transportMode = "Road"
-honda.weight = "150 KGS"
-honda.capasity = "2.5 L"
-honda.color = "Yellow"
-honda.maxSpeed = "220 KMPH"
-honda.fuelType = "Diesel"
-honda.PeopleCapacity = 6
-honda.average = "50 KMPL"
-honda.canReverse = true
-
-honda.print()
-console.log("------");
-
-let motorBike = new MotorBike
-motorBike.transportMode = "Road"
-motorBike.weight = "100 KGS"
-motorBike.capasity = "1.5 L"
-motorBike.color = "Red"
-motorBike.maxSpeed = "150KMPH"
-motorBike.fuelType = "Petrol"
-motorBike.PeopleCapacity = 2
-motorBike.average = "80 KMPL"
-motorBike.print()
+let car = new Vehicle({id:"XE9", lattitude: 12.9090909, longitude: 24.9797979})
+console.log("car", car);
