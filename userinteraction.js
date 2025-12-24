@@ -1304,12 +1304,16 @@
 //Factory function
 // let Vehicle = function(intialData)
 // {
-//     let { id, lattitude, longitude } = intialData
+//     let { id, lattitude, longitude } = intialData //distructor or dismantle
 //     this.setPosition = function(lattitude, longitude)
 //     {
 //         this.time = Date.now();
 //         this.longitude = longitude
 //         this.lattitude = lattitude
+//     }
+//     this.getPosition = function()
+//     {
+//         return { lattitude: this.lattitude, longitude:this.longitude}
 //     }
 //     this.id = id
 //     this.status = "unavailable"
@@ -1317,9 +1321,57 @@
 // }
 // let car = new Vehicle({id:"XE9", lattitude: 12.9090909, longitude: 24.9797979})
 // console.log("car", car);
+// console.log("lat long : ", car.getPosition());
+// let {lattitude, longitude} = car.getPosition()
+// console.log("lattitude", lattitude);
+// console.log("longitude", longitude);
+
+
 // let getName = function(name)
 // {
 //     return name
 // }
 // console.log(getName());
 
+
+// class Vehicle
+// {
+//     constructor({id, lattitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.setPosition(lattitude, longitude)
+//     }
+//     setPosition({lattitude, longitude})
+//     {
+//         this.time = Date.now();
+//         this.longitude = longitude
+//         this.lattitude = lattitude
+//     }
+//     getPosition()
+//     {
+//         return { lattitude: this.lattitude, longitude:this.longitude}
+//     }
+// }
+// let vehicle = new Vehicle({lattitude: 18.32123, longitude: 59.367628, id: "AL1024"})
+// vehicle.setPosition({longitude: 18.193121, lattitude: 59.378654})
+// console.log(vehicle.getPosition());
+
+
+function namedFunction()
+{
+    console.log("I'm NJ, I hope....");    
+}
+let anonymousFunction = function()
+{
+    console.log("I'm a bit anonymous....");
+    
+}
+let notExactlyAnonymousFunction = function anotherNamedFunction()
+{
+    console.log("I'm confused");
+    
+}
+namedFunction()
+anonymousFunction()
+notExactlyAnonymousFunction()
