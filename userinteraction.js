@@ -1358,20 +1358,38 @@
 // console.log(vehicle.getPosition());
 
 
-function namedFunction()
-{
-    console.log("I'm NJ, I hope....");    
-}
-let anonymousFunction = function()
-{
-    console.log("I'm a bit anonymous....");
+// function namedFunction()
+// {
+//     console.log("I'm NJ, I hope....");    
+// }
+// let anonymousFunction = function()
+// {
+//     console.log("I'm a bit anonymous....");
     
-}
-let notExactlyAnonymousFunction = function anotherNamedFunction()
-{
-    console.log("I'm confused");
+// }
+// let notExactlyAnonymousFunction = function anotherNamedFunction()
+// {
+//     console.log("I'm confused");
     
+// }
+// namedFunction()
+// anonymousFunction()
+// notExactlyAnonymousFunction()
+
+let AlmostEmptyClass = class
+{
+    constructor(sth)
+    {
+        console.log(sth);
+    }
+    sayHi()
+    {
+        console.log("Hi!");
+    }
 }
-namedFunction()
-anonymousFunction()
-notExactlyAnonymousFunction()
+let almostEmptyobject = new AlmostEmptyClass(120)
+almostEmptyobject.sayHi()
+console.log("almostEmptyobject instanceof AlmostEmptyClass: ",almostEmptyobject instanceof AlmostEmptyClass);
+console.log("almostEmptyobject instanceof AlmostEmptyClass: ",almostEmptyobject instanceof String);
+let str = new String("Test Me!")
+console.log("str instanceof String: ",str instanceof String);
