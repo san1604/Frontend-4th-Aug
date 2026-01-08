@@ -1336,7 +1336,7 @@
 
 // class Vehicle
 // {
-//     constructor({id, lattitude, longitude})
+//     constructor({id, lattitude, longitude}) //Destructor
 //     {
 //         this.id = id
 //         this.status = "unavailable"
@@ -1376,20 +1376,190 @@
 // anonymousFunction()
 // notExactlyAnonymousFunction()
 
-let AlmostEmptyClass = class
-{
-    constructor(sth)
-    {
-        console.log(sth);
-    }
-    sayHi()
-    {
-        console.log("Hi!");
-    }
-}
-let almostEmptyobject = new AlmostEmptyClass(120)
-almostEmptyobject.sayHi()
-console.log("almostEmptyobject instanceof AlmostEmptyClass: ",almostEmptyobject instanceof AlmostEmptyClass);
-console.log("almostEmptyobject instanceof AlmostEmptyClass: ",almostEmptyobject instanceof String);
-let str = new String("Test Me!")
-console.log("str instanceof String: ",str instanceof String);
+// let AlmostEmptyClass = class
+// {
+//     constructor(sth)
+//     {
+//         console.log(sth);
+//     }
+//     sayHi()
+//     {
+//         console.log("Hi!");
+//     }
+// }
+// let almostEmptyobject = new AlmostEmptyClass(120)
+// almostEmptyobject.sayHi()
+// console.log("almostEmptyobject instanceof AlmostEmptyClass: ",almostEmptyobject instanceof AlmostEmptyClass);
+// console.log("almostEmptyobject instanceof AlmostEmptyClass: ",almostEmptyobject instanceof String);
+// let str = new String("Test Me!")
+// console.log("str instanceof String: ",str instanceof String);
+
+// let myobject = 
+// {
+//     a: 1,
+//     b: 2,
+//     c: "C"
+// }
+// console.log("myobject",myobject);
+// let {a,c} = myobject //destruction
+// console.log("a: ",a);
+// console.log("c: ",c);
+
+// class Vehicle
+// {
+//     constructor({id, lattitude, longitude}) //Destructor
+//     {
+//         this.id = id
+//         this.position = {lattitude, longitude}
+//         this.status = "unavailable"
+        
+//     }
+//     set position({lattitude, longitude})
+//     {
+//         this.time = Date.now();
+//         this.longitude = longitude
+//         this.lattitude = lattitude
+//     }
+//     get position()
+//     {
+//         return { lattitude: this.lattitude, longitude:this.longitude}
+//     }
+//     print()
+//     {
+//         console.log("id: ", this.id);
+//         console.log("Position: ", this.position);
+//         console.log("Time: ", this.time);
+//     }
+// }
+// let vehicle = new Vehicle({lattitude: 18.32123, longitude: 59.367628, id: "AL1024"})
+// vehicle.position = {longitude: 18.193121, lattitude: 59.378654}
+// console.log(vehicle.position);
+// console.log("------");
+// vehicle.print()
+
+// class Car extends Vehicle
+// {
+//     constructor({color, gears, id, lattitude, longitude})
+//     {
+//         super({id, lattitude, longitude})
+//         this.color = color
+//         this.gears = gears
+//     }
+//     print()
+//     {
+//         super.print() //shadowing
+//         console.log("color: ", this.color);
+//         console.log("gears: ", this.gears);
+//     }
+// }
+// console.log("===========");
+
+// let toyota = new Car({color: "Black", gears: 6,id: "ABC", lattitude: 15.34545, longitude: 14.5675})
+// toyota.print()
+
+// class Vehicle
+// {
+//     id
+//     position
+//     status
+//     time
+//     #lattitude
+//     #longitude
+//     constructor({id, lattitude, longitude}) //Destructor
+//     {
+//         this.id = id
+//         this.position = {lattitude, longitude}
+//         this.status = "unavailable"
+        
+//     }
+//     set position({lattitude, longitude})
+//     {
+//         this.time = Date.now();
+//         this.#longitude = longitude
+//         this.#lattitude = lattitude
+//     }
+//     get position()
+//     {
+//         return { lattitude: this.#lattitude, longitude:this.#longitude}
+//     }
+//     print()
+//     {
+//         console.log("id: ", this.id);
+//         console.log("Position: ", this.position);
+//         console.log("Time: ", this.time);
+//     }
+// }
+// let vehicle = new Vehicle({lattitude: 18.32123, longitude: 59.367628, id: "AL1024"})
+// vehicle.position = {longitude: 18.193121, lattitude: 59.378654}
+// console.log(vehicle.position);
+// console.log("------");
+// console.log(this.lattitude);
+
+// console.log("------");
+// vehicle.print()
+
+// class Car extends Vehicle
+// {
+//     constructor({color, gears, id, lattitude, longitude})
+//     {
+//         super({id, lattitude, longitude})
+//         this.color = color
+//         this.gears = gears
+//     }
+//     print()
+//     {
+//         super.print() //shadowing
+//         console.log("color: ", this.color);
+//         console.log("gears: ", this.gears);
+//     }
+// }
+// console.log("===========");
+
+// let toyota = new Car({color: "Black", gears: 6,id: "ABC", lattitude: 15.34545, longitude: 14.5675})
+// toyota.print()
+
+// let AlmostEmpty = function(sth)
+// {
+//     console.log(sth);
+//     this.sayHi = function()
+//     {
+//         console.log("Hi..");
+//     }
+
+// }
+// class ExtendedClass extends AlmostEmpty
+// {
+//     constructor(name)
+//     {
+//         super("I'm in Super....")
+//         this.name = name
+//     }
+//     sayHi()
+//     {
+//         console.log(`Hi ${this.name}!`);
+        
+//     }
+// }
+// let obj = new ExtendedClass("Bob")
+// obj.sayHi() 
+
+// Static function/ Static Property
+// class AlmostEmptyClass
+// {
+//     constructor (sth)
+//     {
+//         console.log(sth);
+//     }
+//     sayHi()
+//     {
+//         console.log("Hi..");        
+//     }
+//     static sayHello()
+//     {
+//         console.log("Hello!");
+//     }
+// }
+// let almostEmptyobject = new AlmostEmptyClass(120)
+// almostEmptyobject.sayHi()
+// // almostEmptyobject.sayHello() //error because 
+// AlmostEmptyClass.sayHello()
