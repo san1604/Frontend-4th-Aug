@@ -1563,3 +1563,33 @@
 // almostEmptyobject.sayHi()
 // // almostEmptyobject.sayHello() //error because 
 // AlmostEmptyClass.sayHello()
+
+// let n = new Number(100.123)
+// let fixed = n.toFixed (2)
+// let testl = Number.isInteger(100)
+// // let test2 = n.isInteger (100) // -> n.isInteger is not a function
+// console.log(fixed);
+// console.log(testl);
+// console.log("hello");
+// console.log(typeof NaN)
+
+//Type Conversion
+// Two types: 
+// 1. Implicit
+// 2. Explicit
+// -> Implicit Conversion
+let bool = true
+console.log("bool: ", bool);
+console.log("typeof bool: ", typeof bool);
+let strbool = ""+bool
+console.log("strbool: ",strbool);
+console.log("typeof strbool: ",typeof strbool);
+
+// -> Explicit Conversion
+let strbool1 = String(bool)
+console.log("strbool1: ",strbool1);
+console.log("typeof strbool1: ",typeof strbool1);
+
+let bool1 = new Boolean("")
+console.log("bool1: ", bool1);
+console.log("typeof bool1: ", typeof bool1);
