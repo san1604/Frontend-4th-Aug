@@ -5,6 +5,12 @@ for (let index = 0; index < thisIsAnArray.length; index++) {
 }
 
 // Write a JavaScript function to check if a string contains a specific substring
+function containsSubstring(str, substring) {
+    return str.includes(substring);
+}
+
+console.log(containsSubstring("Hello World", "World")); // true
+console.log(containsSubstring("Hello World", "xyz")); // false
 
 // Write a Program to reverse a string in JavaScript.
 let string = "palindrome"
@@ -73,3 +79,22 @@ function printFibonacci(n)
 }
 printFibonacci(10)
 
+// Write a Program to find factorial of a number?
+function findFactorial(num) {
+    if (num < 0) return "Factorial is not defined for negative numbers";
+    if (num === 0 || num === 1) return 1;
+    let factorial = 1;
+    for (let i = 2; i <= num; i++) {
+        factorial *= i;
+    }
+    return factorial;
+}
+
+console.log(findFactorial(5)); // 120
+console.log(findFactorial(0)); // 1
+
+// Print the odd numbers less than 100
+for (let i = 1; i < 100; i += 2) {
+    console.log(i);
+}
+// Print the odd numbers less than 100
